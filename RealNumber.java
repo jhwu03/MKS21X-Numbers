@@ -1,20 +1,28 @@
 public class RealNumber{
   private double value;
-  public RealNumbers(){
-    n = 100.0;
+
+  public RealNumber(){
+    value = 10.0;
   }
-  public RealNumbers(double a){
+  public RealNumber(double a){
     value = a;
   }
   public double add(RealNumber other){
-    return value + other.getValue();
+    return this.getValue() + other.getValue();
+  }
+  public double multiply(RealNumber other){
+    return this.getValue() *other.getValue();
+  }
+  public double divide(RealNumber other){
+    return this.getValue() / other.getValue();
+  }
+  public double subtract(RealNumber other){
+    return this.getValue() - other.getValue();
   }
   public double getValue(){
     return value;
   }
-  public void setReal(double h){
-  }
   public String toString(){
-    return "" + getReal();
+    return "" + value;
   }
 }
